@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vibe_x/screens/welcome_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +12,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'VibeX',
-      home: Scaffold(
-        appBar: AppBar(
-            title: const Text('VibeX'),
-            backgroundColor: Colors.deepPurpleAccent,
-            titleTextStyle: const TextStyle(fontSize: 30, color: Colors.white)),
-      ),
+      theme: ThemeData.dark(),
+      home: const WelcomePage(),
     );
   }
 }
